@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="541.0" prefWidth="981.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kr.or.yi.board.Controller.LoginController">
+   <children>
+      <AnchorPane prefHeight="500.0" prefWidth="700.0">
+         <StackPane.margin>
+            <Insets />
+         </StackPane.margin>
+      </AnchorPane>
+      <AnchorPane prefHeight="480.0" prefWidth="830.0" style="-fx-background-color: wheat;">
+         <children>
+            <AnchorPane layoutX="471.0" prefHeight="542.0" prefWidth="506.0" style="-fx-background-color: white;">
+               <children>
+                  <TextField fx:id="tfid" layoutX="103.0" layoutY="198.0" />
+                  <TextField fx:id="tfpw" layoutX="103.0" layoutY="251.0" />
+                  <FontAwesomeIcon glyphName="CLOSE" layoutX="282.0" layoutY="108.0" onMouseClicked="#close" size="2em" wrappingWidth="27.0" />
+                  <Button layoutX="209.0" layoutY="65.0" mnemonicParsing="false" onAction="#close" opacity="0.0" prefHeight="41.0" prefWidth="45.0" />
+                  <FontAwesomeIcon glyphName="USER" layoutX="147.0" layoutY="132.0" size="3em" wrappingWidth="62.0" />
+                  <Label layoutX="45.0" layoutY="190.0" prefHeight="41.0" prefWidth="80.0" text="ID : ">
+                     <font>
+                        <Font name="DejaVu Sans Mono Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="45.0" layoutY="243.0" prefHeight="41.0" prefWidth="80.0" text="PW :">
+                     <font>
+                        <Font name="DejaVu Sans Mono Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Button layoutX="103.0" layoutY="306.0" mnemonicParsing="false" onAction="#login" prefHeight="18.0" prefWidth="171.0" styleClass="login-btn" text="Login">
+                     <font>
+                        <Font name="DejaVu Sans Mono Bold" size="13.0" />
+                     </font></Button>
+               </children>
+            </AnchorPane>
+            <Label layoutX="246.0" layoutY="211.0" prefHeight="62.0" prefWidth="184.0" text="Login Page">
+               <font>
+                  <Font name="DejaVu Sans Mono Bold" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
